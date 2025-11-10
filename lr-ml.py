@@ -73,3 +73,17 @@ for relatorio in relatorios:
     print(f'\nMATRIZ DE CONFUSÃO:\n\n{relatorio['matriz_confusao']}')
     print(f'\nRELATÓRIO DE CLASSIFICAÇÃO:\n\n{relatorio['relatorio_classificacao']}')
     print('-'*120)
+
+#prints novos usando graficos abaixo
+
+import graficos
+
+#graficos.plot_confusion_matrix(matriz_confusao, grid.best_estimator_)
+
+#graficos.plot_pesos(grid.best_estimator_, dados.feature_names)
+
+#graficos.plot_precision_recall_curve(grid.best_estimator_, X_teste, y_teste)
+
+#graficos.plot_roc_curve(grid.best_estimator_, X_teste, y_teste)
+
+#graficos.plot_desvio(pd.DataFrame(grid.cv_results_)) #bizarro!!!!
